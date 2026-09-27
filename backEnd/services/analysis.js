@@ -52,7 +52,7 @@ export async function analyzeResume(text, jobDescription = '') {
       const timeout = new Promise((_, reject) => {
         const error = new Error(`Gemini analysis timed out (${modelName}).`);
         error.statusCode = 504;
-        setTimeout(() => reject(error), 45_000);
+        setTimeout(() => reject(error), 90_000);
       });
       const response = await Promise.race([model.generateContent(prompt), timeout]);
       const rawText = response.response.text();
