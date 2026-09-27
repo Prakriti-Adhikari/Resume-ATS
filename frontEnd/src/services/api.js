@@ -1,6 +1,6 @@
 const API_BASE = (typeof window !== 'undefined' && window.location.port === '3000')
   ? `${window.location.protocol}//${window.location.hostname}:4000`
-  : '';
+  : 'https://resume-ats-5cnn.onrender.com';
 
 async function request(path, options = {}) {
   let response;
