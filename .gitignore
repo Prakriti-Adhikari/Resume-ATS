@@ -1,0 +1,13 @@
+# Environment variables
+.env
+.env.*
+
+# Dependencies
+node_modules/
+
+# Frontend generated files
+frontEnd/public/app.js
+frontEnd/public/app.js.map
+
+# macOS
+.DS_Store
